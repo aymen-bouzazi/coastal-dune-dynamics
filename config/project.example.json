@@ -1,0 +1,24 @@
+{
+  "rasters": {
+    "2005": "../private/raster_2005.tif",
+    "2010": "../private/raster_2010.tif",
+    "2015": "../private/raster_2015.tif",
+    "2020": "../private/raster_2020.tif",
+    "2025": "../private/raster_2025.tif"
+  },
+  "holdout_year": 2025,
+  "future_years": [2030, 2035, 2040, 2045],
+  "aoi_mask": null,
+  "output": "../results/run_01",
+  "forecast_mode": "dynamic",
+  "aggregation": "mean",
+  "connectivity": 4,
+  "seed": 42,
+  "plots": true,
+  "rules": {
+    "resistance": [0.2, 0.25, 0.5, 0.25, 0.5, 0.1, 1.0, 1.0, 0.2],
+    "locked": [0, 6, 7],
+    "allocation": "argmax",
+    "rule": "neighbours"
+  }
+}
